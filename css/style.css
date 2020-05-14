@@ -10,12 +10,6 @@ body {
   background-color: #ffffff;
 }
 
-nav {
-  background-color: #000;
-  color: #fff;
-  padding: 1rem 4rem;
-}
-
 h1 {
   font-size: 2.4rem;
   margin-top: 4rem;
@@ -52,12 +46,22 @@ p {
   margin-top: 4rem;
 }
 
+nav {
+  background-color: #000;
+  color: #fff;
+}
+
+li {
+  font-size: 1.6rem;
+}
+
 .container {
   background-color: green;
+  width: auto;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: auto;
   grid-template-areas:
     "hero"
     "recent"
@@ -114,8 +118,7 @@ footer {
       "second second second"
       "process process process"
       "test test test ";
-    margin: 0 auto;
-    width: 55.5rem;
+    width: 100%;
   }
 }
 
@@ -128,9 +131,7 @@ footer {
       "recent recent recent"
       "second second second"
       "process process process"
-      "test test test";
-    margin: 0 auto;
-    width: 111rem;
+    width: 100%;
    }
   }
 
