@@ -1,64 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Ashley Ross</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flex.css">
   </head>
   <body>
-    <nav>
-      <ul class="flex-container">
-        <li class="logo">Logo</li>
-        <li class="work">Work</li>
-        <li class="about">About me</li>
-        <li class="contact">Contact me</li>
+    <!-- navigation bar -->
+    <nav class="navbar">
+      <ul>
+        <li class="navLogo">
+          <img src="images/LogoWhite.png" alt="Ashley Ross Logo">
+        </li>
+        <li class="work">
+          <h6>Work</h6>
+        </li>
+        <li class="about">
+          <h6>About me</h6>
+        </li>
+        <li class="contact">
+          <div class="container">
+            <button class="btn btn5">Contact Me</button>
+          </div>
+        </li>
       </ul>
     </nav>
-    <div class="container">
       <!-- hero unit -->
-      <section class="hero">
-        <p>Hello, my name is Ashley Ross.</p>
-        <p>Mom by day, UX Hero by night.</p>
-        <p>I keep watch from the shores of Lake Superior in Marquette, MI. Using my empath skills for good, I pledge to bridge the gap between best practice and innovative design to unite us all.</p>
-      </section>
-      <!-- other sections below -->
-      <section class="recent">
-        <h1>Hero Work</h1>
-        <h2>Round Table</h2>
-        <h3>Get organized and slay your projects today.</h3>
-        <p>A cloud-based storage design forged by the people for the creative community to gain, organize, and share knowledge.</p>
-      </section>
-      <section class="second">
-        <h2>Capstone</h2>
-        <h3>Capstone Statement</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </section>
-      <section class="process">
-        <h1>Rescue Plan</h1>
-        <h4>Research and Data Analysis</h4>
-        <p>User Surveys User Personas Competative Analysis</p>
-        <h4>Info Architecture</h4>
-        <p>User Stories User Flows Wireframes</p>
-        <h4>Visual Design</h4>
-        <p>Branding Style Guide Hi-Fi Mockups</p>
-        <h4>Testing</h4>
-        <p>Clickable Prototypes Usability Testing Preference Testing</p>
-      </section>
-      <section class="test">
-        <h1>Testify</h1>
-        <h4>Name and Title</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare nisi, porta at mauris sapien amet. Lectus pellentesque ipsum in malesuada quam adipiscing aenean quam. Blandit eros, scelerisque congue nec pretium nisi, lobortis. Cursus aliquet tortor massa iaculis egestas scelerisque luctus vitae, amet. Cursus enim sagittis, ut elementum sed ultricies ut. At fermentum a felis aenean hac. Risus, pellentesque sed nulla blandit ut ultrices vitae. Augue amet nec ullamcorper euismod vestibulum congue.</p>
-      </section>
+    <section class="hero">
+      <div class="heroImage">
+      </div>
+      <h1>Hello, my name is Ashley Ross.</h1>
+      <h4>Mom by day, UX Hero by night.</h4>
+      <h4>I keep watch from the shores of Lake Superior in Marquette, MI. Using my empath skills for good, I pledge to bridge the gap between best practice and innovative design to unite us all.</h4>
+      <div class="container">
+        <button class="btn btn1">View My Latest Work</button>
+      </div>
+    </section>
+      <!-- projects -->
+    <section class="recent">
+      <h1>Hero Work</h1>
+      <h2>Round Table</h2>
+      <h3>Get organized and slay your projects today.</h3>
+      <p>A cloud-based storage design forged by the people for the creative community to gain, organize, and share knowledge.</p>
+      <div class="container">
+        <button class="btn btn2">View Case Study</button>
+      </div>
+      <img src="images/RoundTableFDMobile.png" alt="Round Table Mockup">
+      <img src="images/Bam.png" alt="BAM Icon">
+    </section>
+    <section class="second">
+      <h2>Capstone</h2>
+      <h3>Capstone Statement</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="container">
+        <button class="btn btn2">View Case Study</button>
+      </div>
+      <img src="images/Boom.png" alt="BOOM Icon">
+    </section>
+    <!-- process -->
+    <section class="process">
+      <h1>Rescue Plan</h1>
+      <ul class="processList">
+        <li class="processOne">
+          <img src="images/ResearchIconMobile.png" alt="Research Icon">
+          <h4>Research and Data Analysis</h4>
+          <p>User Surveys User Personas Competative Analysis</p>
+        </li>
+        <li class="processTwo">
+          <img src="images/InfoArchIconMobile.png" alt="Info Architecture Icon">
+          <h4>Info Architecture</h4>
+          <p>User Stories User Flows Wireframes</p>
+        </li>
+        <li class="processThree">
+          <img src="images/VisualIconMobile.png" alt="Visual Design Icon">
+          <h4>Visual Design</h4>
+          <p>Branding Style Guide Hi-Fi Mockups</p>
+        </li>
+        <li class="processFour">
+          <img src="images/TestingIconMobile.png" alt="Testing Icon">
+          <h4>Testing</h4>
+          <p>Clickable Prototypes Usability Testing Preference Testing</p>
+        </li>
+      </ul>
+    </section>
+    <!-- testimonial -->
+    <section class="test">
+      <img src="images/Smash.png" alt="SMASH Icon">
+      <h1>Testify</h1>
+      <h4>Name and Title</h4>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare nisi, porta at mauris sapien amet. Lectus pellentesque ipsum in malesuada quam adipiscing aenean quam. Blandit eros, scelerisque congue nec pretium nisi, lobortis. Cursus aliquet tortor massa iaculis egestas scelerisque luctus vitae, amet. Cursus enim sagittis, ut elementum sed ultricies ut. At fermentum a felis aenean hac. Risus, pellentesque sed nulla blandit ut ultrices vitae. Augue amet nec ullamcorper euismod vestibulum congue.</h5>
+    </section>
+    <div class="container">
+      <button class="btn btn3">Back to Top</button>
     </div>
-    <footer>
+    <!-- footer -->
+    <footer class="footer">
       <h3>Thank you for making it this far, but my story doesn’t end here.</h3>
+      <div class="container">
+        <button class="btn btn4">Contact Me</button>
+      </div>
       <p>Let's connect</p>
       <h6>Work</h6>
       <h6>About me</h6>
       <p>ashley.ross0612@gmail.com</p>
+        <img src="images/LogoWhite.png" alt="Ashley Ross Logo">
     </footer>
   </body>
 </html>

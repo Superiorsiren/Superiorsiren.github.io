@@ -12,62 +12,57 @@ body {
 
 h1 {
   font-size: 2.4rem;
+  font-family: "raleway";
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
+
 h2 {
   font-size: 2.4rem;
+  font-family: "raleway";
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 h3 {
   font-size: 2.4rem;
+  font-family: "raleway";
   margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 h4 {
   font-size: 1.8rem;
+  font-family: "raleway";
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 h5 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-family: "roboto";
+  font-style: italic;
   font-weight: bold;
-  color: #ffffff;
   margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 h6 {
   font-size: 1.6rem;
-  margin-top: 1rem;
+  font-family: "raleway";
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 p {
   font-size: 1.6rem;
+  font-family: "roboto";
   margin-top: 4rem;
-}
-
-nav {
-  background-color: #000;
-  color: #fff;
+  margin-bottom: 4rem;
 }
 
 li {
   font-size: 1.6rem;
-}
-
-.container {
-  background-color: green;
-  width: auto;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-  grid-template-areas:
-    "hero"
-    "recent"
-    "second"
-    "process"
-    "test";
 }
 
 section {
@@ -77,18 +72,76 @@ section {
   padding: 10rem 0;
 }
 
+.container {
+  text-align: center;
+}
+
+.btn {
+  background: none;
+  padding: 2rem 4rem;
+  font-size: 1.4rem;
+  font-family: "raleway";
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 4rem;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1 {
+  color: #fff;
+  background-color: #CF2833;
+}
+
+.btn2 {
+  color: #fff;
+  background-color: #094C55;
+}
+
+.btn3 {
+  background-color: #fff;
+  color: #000;
+
+}
+
+.btn4 {
+  color: #fff;
+  background-color: #CF2833;
+}
+
+.btn5 {
+  color: #fff;
+  background: none;
+}
+
+.navbar {
+  background-color: #000;
+  color: #fff;
+  grid-area: navbar;
+}
+
+.heroImage {
+  width: 37.5rem;
+  height: 25.7rem;
+  background-image: url(images/HeroImageOriginalMobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navLogo {
+}
+
 .hero {
-  background-color: #ffffff;
   grid-area: hero;
 }
 
 .recent {
-  background-color: #ffffff;
   grid-area: recent;
 }
 
 .second {
-  background-color: #ffffff;
   grid-area: second;
 }
 
@@ -98,41 +151,21 @@ section {
 }
 
 .test {
-  background-color: #ffffff;
   grid-area: test;
 }
 
-footer {
+.footer {
   background-color: #000;
   color: #fff;
-  padding: 4rem 4rem;
+  grid-area: footer;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    background-color: yellow;
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-template-areas:
-      "hero hero hero"
-      "recent recent recent"
-      "second second second"
-      "process process process"
-      "test test test ";
-    width: 100%;
-  }
+
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
-    background-color: blue;
-    grid-template-columns: 2fr 8fr 2fr;
-    grid-template-areas:
-      "hero hero hero"
-      "recent recent recent"
-      "second second second"
-      "process process process"
-    width: 100%;
-   }
-  }
 
 }

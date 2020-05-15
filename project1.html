@@ -1,29 +1,42 @@
-<html>
+<html lang="en" dir="ltr">>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Ashley Ross</title>
+    <title>Round Table Case Study | Ashley Ross</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flex.css">
   </head>
   <body>
-    <nav>
-      <ul class="flex-container">
-        <li class="logo">Logo</li>
-        <li class="work">Work</li>
-        <li class="about">About me</li>
-        <li class="contact">Contact me</li>
+    <!-- navigation bar -->
+    <nav class="navbar">
+      <ul>
+        <li class="navLogo">
+          <img src="images/LogoWhite.png" alt="Ashley Ross Logo">
+        </li>
+        <li class="work">
+          <h6>Work</h6>
+        </li>
+        <li class="about">
+          <h6>About me</h6>
+        </li>
+        <li class="contact">
+          <div class="container">
+            <button class="btn btn5">Contact me</button>
+          </div>
+        </li>
       </ul>
     </nav>
-    <div class="container">
-      <!-- hero unit -->
-      <section class="hero">
-        <p>Get organized and slay your projects on Round Table.</p>
-        <p>A creative cloud-based storage solution.</p>
-        <h5>View Prototype</h5>
-      </section>
-      <!-- other sections below -->
+    <!-- hero unit -->
+    <section class="hero">
+      <div class="roundTableHeroImage">
+      </div>
+      <h1>Get organized and slay your projects on Round Table.</h1>
+      <h4>A creative cloud-based storage solution.</h4>
+      <div class="container">
+        <button class="btn btn1">View Prototype</button>
+      </div>
+    </section>
+      <!-- Intro -->
       <section class="intro">
         <h1>Introduction</h1>
         <h2>Problem</h2>
@@ -31,23 +44,29 @@
         <h2>Solution</h2>
         <h3>A simple, inclusive design with a pinch of personality.</h3>
         <h2>Roles</h2>
-        <p>Researcher, Data Analist, Information Architect, Visual Designer, and Quality Assurance Facilitator.</p>
+        <h4>Researcher, Data Analist, Information Architect, Visual Designer, and Quality Assurance Facilitator.</h4>
+        <img src="images/RoundTableFDMobile.png" alt="Round Table Mockup">
       </section>
+            <!-- User Surveys -->
       <section class="surveys">
         <h1>Research & Development</h1>
         <h2>User Surveys</h2>
         <p>Tools: Google Forms, Google Sheets</p>
         <p>The first destination in the journey was to conduct user surveys to discover what the people wanted from their cloud storage platform. This included a variety of questions geared towards finding how users currently feel about the current cloud storage options, as well as some questions about a creative platform to narrow down user needs.</p>
-        <h5>View User Survey Results</h5>
-        <ul>
-          <li class="label">A Few Questions</li>
+        <button class="btn btn2">View User Survey Results</button>
+        <ul class="questions">
+          <li>
+            <h4>A Few Questions</h4>
+          </li>
           <li>When thinking about the specific cloud storage platforms you have used, what is most frustrating?</li>
           <li>Which features do you use most?</li>
           <li>What would be your reason(s) for using a Creative Cloud Based Storage Platform?</li>
           <li>Would you be willing to share your projects with others?</li>
         </ul>
-        <ul>
-          <li class="label">The Results</li>
+        <ul class="results">
+          <li>
+            <h4>The Results</h4>
+          </li>
           <li>Focusing on the features used most, file sharing, file organization, and project collaboration were marked highest.</li>
           <li>Similarly, when asked what features users would want in a creative cloud storage platform, collaboration and file organization led the way.</li>
           <li>Users also mentioned wanting more free storage, less ads, and a simpler way to organize files.</li>
@@ -56,8 +75,10 @@
           <li>Diving deeper into collaboration features, direct messaging and message boards were ranked the highest for mode of collaboration.</li>
           <li>Of those interested in the creative cloud-based platform, 100% were willing to share their projects with others.</li>
         </ul>
-        <ul>
-          <li class="summary">Takeaways</li>
+        <ul class="summary">
+          <li>
+            <h2>Takeaways</h2>
+          </li>
           <li>Simple and friendly for a variety of skill levels</li>
           <li>Visual experience</li>
           <li>User-friendly collaboration</li>
@@ -69,7 +90,8 @@
         <h2>User Personas</h2>
         <p>Tools: Figma</p>
         <p>Based on the survey results, three user personas were designed with a broad range of experience and needs to set the scope for the target audience.</p>
-        <div class="lexi">
+        <div class="persona1">
+          <img src="images/Lexi.jpg" alt="Lexi Persona">
           <h4>Lexi, Home DIY on a Dime</h4>
           <p>Bio</p>
           <p>Lexi Williams, age 24, works as a junior accountant in Syracuse, NY. Lexi recently got married and bought a house that requires some TLC. She loves doing projects and learning new skills.</p>
@@ -78,7 +100,8 @@
           <p>Frustrations</p>
           <p>Too many ads and unhelpful links on Pinterest have discouraged her from using that platform anymore. Dislikes having to use separate platforms to have To-Do lists, budget spreadsheets, and tutorials.</p>
         </div>
-        <div class="mary">
+        <div class="persona2">
+          <img src="images/Mary.jpg" alt="Mary Persona">
           <h4>Mary, Mother of Photos</h4>
           <p>Bio</p>
           <p>Mary Green, age 45, works as a photographer for the National Park Service out of Polson, Montana. Working for the Park Service allows Mary to travel all over the United States. When her two teenage daughters are on summer vacation, the whole family travels with Mary to explore and hike all the National Parks. Mary’s camera is never far from her side. </p>
@@ -87,7 +110,8 @@
           <p>Frustrations</p>
           <p>Doesn’t feel Google Drive is supporting her needs for division of work and personal items. Wants better visualization of sets of photos and would like to leave notes with photo sets.</p>
         </div>
-        <div class="maggie">
+        <div class="persona3">
+          <img src="images/Maggie.jpg" alt="Maggie Persona">
           <h4>Maggie, Fairy-grandmother of the Green Gardens</h4>
           <p>Bio</p>
           <p>Maggie Evans, age 67, is a retired school teacher from Boonsboro, MD. Maggie is a Grandmother to 4 and a Great-Grandmother to 7. She enjoys her retired days tending to her gardens and spending time with her family.</p>
@@ -95,8 +119,7 @@
           <p>Maggie found an idea on Pinterest to do a fairy garden, but quickly became discouraged by false links and ads.</p>
           <p>Frustrations</p>
           <p>Tired of irrelevant links and lack of thorough suggestions for materials and ideas.</p>
-          <!-- change to quote text -->
-          <p>“I want to speak to actual people who have experience with the project.”</p>
+          <h5>“I want to speak to actual people who have experience with the project.”</h5>
         </div>
       </section>
       <section class="competative">
@@ -240,12 +263,17 @@
         <p>To wrap it up, this project taught me a lot about how progress is more important than perfection. Deadlines are extremely important. As are tried and true processes. I was so worried about my design being too mainstream that I forgot users need something familiar or they will quickly move on to an easier option. I still like the flow and feel of my design, but I could have made better use of existing tools. With more time, I would want to add direct messages for collaboration and more organization tools. But, like any good adventurer knows, it isn’t about the destination, it’s about the journey. What is most important is that I learned. Progress over perfection. Start with the fundamentals. Best practice and then add a pinch of unique.</p>
       </section>
     </div>
-    <footer>
+    <!-- footer -->
+    <footer class="footer">
       <h3>Thank you for making it this far, but my story doesn’t end here.</h3>
+      <div class="container">
+        <button class="btn btn4">Contact Me</button>
+      </div>
       <p>Let's connect</p>
       <h6>Work</h6>
       <h6>About me</h6>
       <p>ashley.ross0612@gmail.com</p>
+        <img src="images/LogoWhite.png" alt="Ashley Ross Logo">
     </footer>
   </body>
 </html>
