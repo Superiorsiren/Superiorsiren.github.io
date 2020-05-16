@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -117,26 +119,56 @@ section {
   background: none;
 }
 
-.navbar {
-  background-color: #000;
-  color: #fff;
-  grid-area: navbar;
+.dropdown {
+  height: 4rem;
+  background: yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%
+  margin: auto;
 }
 
-/*.heroImage {
+.dropdown a img {
+  height: 2rem;
+  width: 3rem;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu ul {
+  position: absolute;
+  background: blue;
+  margin-top: 1rem;
+  width: 20rem;
+  height: 24rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  border-radius: .5rem;
+}
+
+.menu a {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "raleway";
+  text-decoration: none;
+}
+
+/*.imageAshleyRossUXHero {
   width: 37.5rem;
   height: 25.7rem;
-  background-image: url(images/HeroImageOriginalMobile.png);
+  background-image: url(images/AshleyRossUXHero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }*/
-
-.hamburgermenu {
-  color: #fff;
-  font-size: 40px;
-  line-height: 40px;
-}
 
 .hero {
   grid-area: hero;
