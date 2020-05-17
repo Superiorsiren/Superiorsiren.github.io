@@ -10,98 +10,102 @@ html {
 
 body {
   background-color: #fff;
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "heroImage"
+  "hero"
+  "recent"
+  "process"
+  "test"
+  "footer";
 }
 
+/*** Typography ***/
 h1 {
-  font-size: 2.4rem;
   font-family: "raleway";
+  font-size: 2.4rem;
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
 
 h2 {
-  font-size: 2.4rem;
   font-family: "raleway";
+  font-size: 2.4rem;
   margin-bottom: 4rem;
 }
 
 h3 {
-  font-size: 2.4rem;
   font-family: "raleway";
-  margin-top: 1rem;
+  font-size: 2.4rem;
   margin-bottom: 4rem;
+  margin-top: 1rem;
 }
 
 h4 {
-  font-size: 1.8rem;
   font-family: "raleway";
-  margin-top: 4rem;
+  font-size: 1.8rem;
   margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 h5 {
-  font-size: 1.6rem;
   font-family: "roboto";
+  font-size: 1.6rem;
   font-style: italic;
   font-weight: bold;
-  margin-top: 1rem;
   margin-bottom: 4rem;
+  margin-top: 1rem;
 }
 
 h6 {
-  font-size: 1.6rem;
   font-family: "raleway";
-  margin-top: 4rem;
+  font-size: 1.6rem;
   margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 p {
-  font-size: 1.6rem;
   font-family: "roboto";
-  margin-top: 4rem;
+  font-size: 1.6rem;
   margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
-li {
-  font-size: 1.6rem;
-  font-family: "roboto";
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
+/*** Structure ***/
 
 section {
   background-color: #ffffff;
   color: #000000;
-  margin-top: 1rem;
-  padding: 10rem 0;
 }
 
 .container {
   text-align: center;
 }
 
+/*** Buttons ***/
 .btn {
   background: none;
-  padding: 2rem 4rem;
-  font-size: 1.4rem;
   font-family: "raleway";
+  font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  transition: 0.8s;
-  position: relative;
   overflow: hidden;
+  padding: 2rem 4rem;
+  position: relative;
+  transition: 0.8s;
 }
 
 .btn1 {
-  color: #fff;
   background-color: #CF2833;
+  color: #fff;
 }
 
 .btn2 {
-  color: #fff;
   background-color: #094C55;
+  color: #fff;
 }
 
 .btn3 {
@@ -110,23 +114,24 @@ section {
 }
 
 .btn4 {
-  color: #fff;
   background-color: #CF2833;
+  color: #fff;
 }
 
 .btn5 {
-  color: #fff;
   background: none;
+  color: #fff;
 }
 
+/*** Navigation Bar ***/
 .dropdown {
-  height: 4rem;
-  background: yellow;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 80%
+  background: #000;
+  display: flex;
+  height: 4rem;
+  justify-content: space-around;
   margin: auto;
+  width: 100%
 }
 
 .dropdown a img {
@@ -139,47 +144,134 @@ section {
 }
 
 .menu ul {
-  position: absolute;
-  background: blue;
-  margin-top: 1rem;
-  width: 20rem;
-  height: 24rem;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  background: #000;
+  display: flex;
   flex-direction: column;
+  height: 24rem;
+  justify-content: space-around;
   list-style: none;
-  border-radius: .5rem;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(-1rem);
+  transition: all 0.4s ease;
+  width: 20rem;
 }
 
 .menu a {
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.6rem;
   font-family: "raleway";
+  font-size: 1.6rem;
   text-decoration: none;
 }
 
+.menu li {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu li:hover {
+  background-color: #CF2833;
+}
+
+.menu a,
+.navLogo {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.home:hover {
+  color: #FAEAEB
+}
+
+.menu a:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+}
+
 /*.imageAshleyRossUXHero {
-  width: 37.5rem;
-  height: 25.7rem;
   background-image: url(images/AshleyRossUXHero.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  height: 25.7rem;
+  width: 37.5rem;
 }*/
+
+.hero, .recent, .second, .process, .test, .footer {
+}
+
+.navbar {
+  grid-area: navbar;
+}
+/*** Hero ***/
+.heroImage {
+  background: url(../images/AshleyRossUXHero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: heroImage;
+  height: 26.8rem;
+  justify-content: center;
+  text-align: center;
+}
 
 .hero {
   grid-area: hero;
 }
 
-.recent {
-  grid-area: recent;
+.img-grid {
+  grid-area: img-grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.second {
-  grid-area: second;
+.hero1 {
+  color: #fff;
+  grid-area: hero1;
+  padding: 0 0 0 1.6rem;
+}
+
+.hero2 {
+  color: #fff;
+  grid-area: hero2;
+  padding: 0 0 0 1.6rem;
+}
+
+.hero3 {
+  grid-area: hero3;
+  padding: 8rem 0 0 1.6rem;
+}
+
+.hero4 {
+  grid-area: hero4;
+  text-align: center;
+}
+
+.hero5 {
+  grid-area: hero5;
+  text-align: center;
+}
+
+.hero6 {
+  text-align: center;
+}
+/*** Recent Project ***/
+.recent {
+  grid-area: recent;
 }
 
 .process {
@@ -195,45 +287,58 @@ section {
   background-color: #000;
   color: #fff;
   grid-area: footer;
-  padding-top: 4rem;
   padding-bottom: 4rem;
+  padding-top: 4rem;
 }
 
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 1440px) {
-
-}
-
-/*.roundTableHeroImage {
-  width: 37.5rem;
-  height: 25.7rem;
-  background-image: url(images/Rocks.jpg);
-  background-size: cover;
+.roundTableHeroImage {
+  background-image: url(../images/Rocks.jpg);
   background-repeat: no-repeat;
   background-position: center;
-}*/
+  background-size: cover;
+  height: 25.7rem;
+  width: 37.5rem;
 
+/*** Project 1 ***/
 .logo {
   font-size: 160px;
   line-height: 160px;
 }
 
 .userFlowImg {
-  width: 37.5rem;
-  height: 61.7rem;
   background-image: url(images/UserFlowBackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 61.7rem;
+  width: 37.5rem;
 }
 
-.summary {
-
+.questions li, .results li, .summary li, .tasks li {
+  font-family: "roboto";
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-.tasks {
+.needs li {
+  font-family: "roboto";
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
 
+/*** Responsive Design ***/
+@media (min-width: 70rem) {
+  body {
+    grid-template-columns: 2fr, 8fr, 2fr;
+    grid-template-areas:
+    "navbar navbar navbar"
+    "heroImage heroImage heroImage"
+    ". hero ."
+    ". recent ."
+    "process process process"
+    ". test ."
+    "footer footer footer";
+  }
 }
