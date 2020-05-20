@@ -13,63 +13,45 @@ body {
   display: grid;
   grid-template-areas:
   "navbar"
-  "heroImage"
   "hero"
   "recent"
+  "decoration1"
   "process"
+  "decoration2"
   "test"
   "footer";
+  grid-template-columns: 1fr;
 }
 
 /*** Typography ***/
+/*** Header ***/
 h1 {
   font-family: "raleway";
   font-size: 2.4rem;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  font-weight: 100;
 }
-
+/*** Subheader ***/
 h2 {
   font-family: "raleway";
-  font-size: 2.4rem;
-  margin-bottom: 4rem;
-}
-
-h3 {
-  font-family: "raleway";
-  font-size: 2.4rem;
-  margin-bottom: 4rem;
-  margin-top: 1rem;
-}
-
-h4 {
-  font-family: "raleway";
   font-size: 1.8rem;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+  font-weight: 100;
 }
-
-h5 {
+/*** Quote ***/
+h3 {
   font-family: "roboto";
   font-size: 1.6rem;
   font-style: italic;
-  font-weight: bold;
-  margin-bottom: 4rem;
-  margin-top: 1rem;
 }
-
-h6 {
+/*** Link ***/
+h4 {
   font-family: "raleway";
   font-size: 1.6rem;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+  font-weight: 100;
 }
-
+/*** Body ***/
 p {
   font-family: "roboto";
   font-size: 1.6rem;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
 }
 
 /*** Structure ***/
@@ -79,23 +61,23 @@ section {
   color: #000000;
 }
 
-.container {
+.header {
   text-align: center;
+  padding-bottom: 8rem;
 }
 
 /*** Buttons ***/
 .btn {
   background: none;
+  border: none;
+  border-radius: .2rem;
   font-family: "raleway";
   font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
   overflow: hidden;
   padding: 2rem 4rem;
   position: relative;
-  transition: 0.8s;
 }
 
 .btn1 {
@@ -103,40 +85,35 @@ section {
   color: #fff;
 }
 
-.btn2 {
-  background-color: #094C55;
-  color: #fff;
-}
-
-.btn3 {
+.back-to-top {
   background-color: #fff;
   color: #000;
 }
 
-.btn4 {
-  background-color: #CF2833;
-  color: #fff;
-}
-
-.btn5 {
+.btn3 {
   background: none;
   color: #fff;
 }
 
 /*** Navigation Bar ***/
+.navbar {
+  background: #000;
+  display: flex;
+}
+
 .dropdown {
   align-items: center;
   background: #000;
   display: flex;
   height: 4rem;
-  justify-content: space-around;
-  margin: auto;
-  width: 100%
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .dropdown a img {
   height: 2rem;
-  width: 3rem;
+  width: 2.8rem;
 }
 
 .menu {
@@ -182,11 +159,13 @@ section {
 }
 
 .menu a,
+
 .navLogo {
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
+  grid-area: navbar;
   text-decoration: none;
 }
 
@@ -201,24 +180,159 @@ section {
   transform: translateY(0px);
 }
 
-/*.imageAshleyRossUXHero {
-  background-image: url(images/AshleyRossUXHero.jpg);
-  background-size: cover;
+/*** Hero ***/
+.hero {
+  grid-area: hero;
+}
+
+.heroImage {
+  background: url(../images/AshleyRossUXHero.png);
   background-position: center;
   background-repeat: no-repeat;
-  height: 25.7rem;
-  width: 37.5rem;
-}*/
-
-.hero, .recent, .second, .process, .test, .footer {
+  background-size: cover;
+  height: 58rem;
+  justify-content: center;
+  padding: 10rem 0;
+  text-align: left;
+  color: #fff;
 }
 
-.navbar {
-  grid-area: navbar;
+.heroText {
+  margin: 0 auto;
+  width: 90%;
 }
-/*** Hero ***/
-.heroImage {
-  background: url(../images/AshleyRossUXHero.jpg);
+
+.heroText h2 {
+  padding-bottom: 4rem;
+}
+
+.scroll {
+  margin: 0 auto;
+  padding-top: 8rem;
+  text-align: center;
+  width: 90%;
+}
+
+/*** Recent Project ***/
+.recent {
+  display: grid;
+  grid-area: recent;
+  grid-row-gap: 4rem;
+  grid-template-columns: repeat(1fr);
+  margin: 0 auto;
+  padding: 8rem 0;
+  width: 90%
+}
+
+.recent img {
+  height: 60rem;
+  justify-content: center;
+}
+
+/*** Bam Decoration ***/
+.decoration1 {
+  background: none;
+  grid-area: decoration1;
+}
+/*** Design Process ***/
+.process {
+  background-color: #faeaeb;
+  display: grid;
+  grid-area: process;
+  grid-column-gap: 4rem;
+  grid-template-columns: repeat(1fr);
+  justify-content: center;
+  padding: 8rem 0;
+}
+
+.process h1 {
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.processOne, .processTwo, .processThree, .processFour {
+    text-align: center;
+}
+
+.processOne img {
+  height: 12rem;
+  margin-bottom: 2rem;
+}
+
+.processTwo img {
+  height: 12rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.processThree img {
+  height: 12rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.processFour img {
+  width: 12rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.process h2 {
+  padding-bottom: 2rem;
+}
+
+.process p {
+  margin: .3rem;
+}
+
+/*** Smash Decoration ***/
+.decoration2 {
+  background: none;
+  grid-area: decoration2;
+}
+
+/*** Testimonial ***/
+.test {
+  grid-area: test;
+  display: grid;
+  grid-gap: 2rem;
+  margin: 0 auto;
+  padding: 8rem 0;
+  width: 60%;
+}
+
+/*** Footer ***/
+.footer {
+  background-color: #000;
+  color: #fff;
+  grid-area: footer;
+}
+
+.footerContent {
+  display: grid;
+  grid-row-gap: 4rem;
+  grid-template-columns: repeat(1fr);
+  justify-content: center;
+  margin: 0 auto;
+  padding: 8rem 0;
+  text-align: center;
+  width: 90%;
+}
+
+.footerContactIcons img {
+  height: 4rem;
+  margin: 0 2rem;
+  width: 4rem;
+}
+
+.footer h4 {
+}
+
+.footerLogo {
+  height: 6rem;
+  width: 8rem;
+}
+
+/*** Project 1 ***/
+.projectHeroImage {
+  background-image: url(../images/Rocks.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,85 +342,13 @@ section {
   text-align: center;
 }
 
-.hero {
-  grid-area: hero;
-}
-
-.img-grid {
-  grid-area: img-grid;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.hero1 {
-  color: #fff;
-  grid-area: hero1;
-  padding: 0 0 0 1.6rem;
-}
-
-.hero2 {
-  color: #fff;
-  grid-area: hero2;
-  padding: 0 0 0 1.6rem;
-}
-
-.hero3 {
-  grid-area: hero3;
-  padding: 8rem 0 0 1.6rem;
-}
-
-.hero4 {
-  grid-area: hero4;
-  text-align: center;
-}
-
-.hero5 {
-  grid-area: hero5;
-  text-align: center;
-}
-
-.hero6 {
-  text-align: center;
-}
-/*** Recent Project ***/
-.recent {
-  grid-area: recent;
-}
-
-.process {
-  background-color: #faeaeb;
-  grid-area: process;
-}
-
-.test {
-  grid-area: test;
-}
-
-.footer {
-  background-color: #000;
-  color: #fff;
-  grid-area: footer;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
-}
-
-.roundTableHeroImage {
-  background-image: url(../images/Rocks.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 25.7rem;
-  width: 37.5rem;
-
-/*** Project 1 ***/
 .logo {
   font-size: 160px;
   line-height: 160px;
 }
 
 .userFlowImg {
-  background-image: url(images/UserFlowBackground.jpg);
+  background-image: url(../images/UserFlowBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -329,16 +371,3 @@ section {
 }
 
 /*** Responsive Design ***/
-@media (min-width: 70rem) {
-  body {
-    grid-template-columns: 2fr, 8fr, 2fr;
-    grid-template-areas:
-    "navbar navbar navbar"
-    "heroImage heroImage heroImage"
-    ". hero ."
-    ". recent ."
-    "process process process"
-    ". test ."
-    "footer footer footer";
-  }
-}
