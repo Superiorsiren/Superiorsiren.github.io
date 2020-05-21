@@ -233,15 +233,12 @@ section {
 /*** Bam Decoration ***/
 .decoration1 {
   background: none;
-  grid-area: decoration1;
 }
 /*** Design Process ***/
 .process {
   background-color: #faeaeb;
-  display: grid;
-  grid-area: process;
-  grid-column-gap: 4rem;
-  grid-template-columns: repeat(1fr);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 8rem 0;
 }
@@ -286,12 +283,10 @@ section {
 /*** Smash Decoration ***/
 .decoration2 {
   background: none;
-  grid-area: decoration2;
 }
 
 /*** Testimonial ***/
 .test {
-  grid-area: test;
   display: grid;
   grid-gap: 2rem;
   margin: 0 auto;
@@ -307,23 +302,31 @@ section {
 }
 
 .footerContent {
-  display: grid;
-  grid-row-gap: 4rem;
-  grid-template-columns: repeat(1fr);
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 8rem 0;
   text-align: center;
   width: 90%;
+  height: 60rem;
 }
 
 .footerContactIcons img {
   height: 4rem;
-  margin: 0 2rem;
+  margin: 4rem 2rem;
   width: 4rem;
 }
 
-.footer h4 {
+.footerContactLinks a {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-family: "raleway";
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 
 .footerLogo {
