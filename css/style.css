@@ -10,17 +10,6 @@ html {
 
 body {
   background-color: #fff;
-  display: grid;
-  grid-template-areas:
-  "navbar"
-  "hero"
-  "recent"
-  "decoration1"
-  "process"
-  "decoration2"
-  "test"
-  "footer";
-  grid-template-columns: 1fr;
 }
 
 /*** Typography ***/
@@ -71,10 +60,11 @@ section {
   background: none;
   border: none;
   border-radius: .2rem;
+  cursor: pointer;
   font-family: "raleway";
   font-size: 1.4rem;
   font-weight: bold;
-  cursor: pointer;
+  margin: 4rem 0;
   overflow: hidden;
   padding: 2rem 4rem;
   position: relative;
@@ -139,6 +129,7 @@ section {
 .menu a {
   background: none;
   border: none;
+  border-radius: .2rem;
   color: #fff;
   font-family: "raleway";
   font-size: 1.6rem;
@@ -159,13 +150,11 @@ section {
 }
 
 .menu a,
-
 .navLogo {
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
-  grid-area: navbar;
   text-decoration: none;
 }
 
@@ -208,25 +197,37 @@ section {
 
 .scroll {
   margin: 0 auto;
-  padding-top: 8rem;
+  padding-top: 4rem;
   text-align: center;
   width: 90%;
 }
 
 /*** Recent Project ***/
-.recent {
-  display: grid;
-  grid-area: recent;
-  grid-row-gap: 4rem;
-  grid-template-columns: repeat(1fr);
-  margin: 0 auto;
-  padding: 8rem 0;
-  width: 90%
+.work-section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.recent img {
+.work-image {
   height: 60rem;
   justify-content: center;
+}
+
+.work {
+  margin-bottom: 8rem;
+}
+
+.work-grid {
+  display: flex;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.work-column {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*** Bam Decoration ***/
