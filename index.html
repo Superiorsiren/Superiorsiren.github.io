@@ -12,47 +12,31 @@
       <!-- navigation bar -->
       <nav class="navbar">
          <div class="dropdown">
-            <a href="index.html" class="navLogo"><img src="images/LogoWhite.png" alt="Ashley Ross Logo"></a>
-            <div class="menu">
-               <a href="#"><span class="iconify" data-inline="false" data-icon="bytesize:menu" style="font-size: 30px;"></span></a>
-               <ul>
-                  <li><a href="project1.html">Work</a></li>
-                  <li><a href="#">About Me</a></li>
-                  <li><a href="#">Contact Me</a></li>
-                  <li><a href="#">Download Resume</a></li>
-               </ul>
+            <button class="dropbtn"><span class="iconify" data-inline="false" data-icon="bytesize:menu" style="font-size: 30px;"></span></button>
+            <div class="dropdown-content">
+               <a href="project1.html">Work</a>
+               <a href="#">About Me</a>
+               <a href="mailto:https:ashley.ross0612@gmail.com">Contact Me</a>
+               <a href="https://docs.google.com/document/d/1v1ztrmMRtNAwA8RwyROW0vInc9FyLgYK71kHSUkGEFk/edit?usp=sharing">View Resume</a>
             </div>
          </div>
+         <a href="index.html" class="nav-logo"><img src="images/LogoWhite.png" alt="Ashley Ross Logo"></a>
       </nav>
-      <!-- navigation bar for tablet and desktop
-         <nav class="navbar">
-           <ul>
-             <li class="navLogo">
-               <img src="images/LogoWhite.png" alt="Ashley Ross Logo">
-             </li>
-             <li class="work">
-               <h6>Work</h6>
-             </li>
-             <li class="about">
-               <h6>About me</h6>
-             </li>
-             <li class="contact">
-               <div class="container">
-                 <button class="btn btn5">Contact Me</button>
-               </div>
-             </li>
-           </ul>
-         </nav>  -->
       <!-- hero unit -->
-      <section class="hero">
-         <div class="heroImage">
-            <div class="heroText">
-               <h1>Hello, my name is Ashley Ross.</h1>
-               <h2>Mom by day, UX Hero by night.</h2>
-               <h2>I keep watch from the shores of Lake Superior in Marquette, MI. Using my empath skills for good, I pledge to bridge the gap between best practice and innovative design to unite us all.</h2>
-               <button class="btn btn1">View My Latest Work</button>
+      <section class="hero-section">
+         <div class="hero-grid">
+            <div class="hero-column1">
+               <div class="hero-column2">
+                  <img src="images/AshleyRossUXHero.png" alt="Ashley Ross UX Hero">
+               </div>
+               <div class="hero-column3">
+                  <h1>Hello, my name is Ashley.</h1>
+                  <h2>Mom by day, UX Hero by night.</h2>
+                  <h2>I keep watch from the shores of Lake Superior in Marquette, MI. Using my empath skills for good, I pledge to bridge the gap between best practice and innovative design to unite us all.</h2>
+                  <button class="btn btn1"><a href="project1.html">View My Latest Work</a></button>
+               </div>
             </div>
-            <div class="scroll">
+            <div class="hero-column4">
                <p>Want the full story?</p>
                <p>Journey below.</p>
                <span class="iconify" data-inline="false" data-icon="carbon:chevron-down" style="font-size: 32.218135833740234px;"></span>
@@ -61,65 +45,67 @@
       </section>
       <!-- projects -->
       <section>
-        <div class="work-section">
-          <h1 class="header">Hero Work</h1>
-          <div class="work">
-            <div class="work-grid">
-              <div class="work-column">
-                <img class="work-image" src="images/RoundTableFDMobile.png" alt="Round Table Mockup">
-              </div>
-              <div class="work-column">
-                <h2 class="work-title">Round Table</h2>
-                <h1 class="work-tagline">Get organized and slay your projects today.</h1>
-                <p>A cloud-based storage design forged by the people for the creative community to gain, organize, and share knowledge.</p>
-                <button class="btn btn1">View Case Study</button>
-              </div>
+         <div class="work-section">
+            <h1 class="header">Hero Work</h1>
+            <div class="work">
+               <div class="work-grid">
+                  <div class="work-column">
+                     <img class="work-image" src="images/RoundTableFDMobile.png" alt="Round Table Mockup">
+                  </div>
+                  <div class="work-column">
+                     <h2>Round Table</h2>
+                     <h1>Get organized and slay your projects today.</h1>
+                     <p>A cloud-based storage design forged by the people for the creative community to gain, organize, and share knowledge.</p>
+                     <button class="btn btn1">View Case Study</button>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="decoration1">
-         <div>
-            <img class="Bam" src="images/Bam.png" alt="BAM Icon">
          </div>
       </section>
+      <!-- BAM -->
+      <div>
+         <img class="Bam" src="images/Bam.png" alt="BAM Icon">
+      </div>
       <!-- process -->
-      <section class="process">
+      <section class="process-section">
          <h1 class="header">Rescue Plan</h1>
-         <div class="processOne">
-            <img src="images/ResearchIconMobile.png" alt="Research Icon">
-            <h2>Research and Data Analysis</h2>
-            <p>User Surveys</p>
-            <p>User Personas</p>
-            <p>Competative Analysis</p>
-         </div>
-         <div class="processTwo">
-            <img src="images/InfoArchIconMobile.png" alt="Info Architecture Icon">
-            <h2>Info Architecture</h2>
-            <p>User Stories</p>
-            <p>User Flows</p>
-            <p>Wireframes</p>
-         </div>
-         <div class="processThree">
-            <img src="images/VisualIconMobile.png" alt="Visual Design Icon">
-            <h2>Visual Design</h2>
-            <p>Branding</p>
-            <p>Style Guide</p>
-            <p>Hi-Fi Mockups</p>
-         </div>
-         <div class="processFour">
-            <img src="images/TestingIconMobile.png" alt="Testing Icon">
-            <h2>Testing</h2>
-            <p>Clickable Prototypes</p>
-            <p>Usability Testing</p>
-            <p>Preference Testing</p>
+         <div class="process">
+            <div class="process-grid">
+               <div class="process-column">
+                  <img src="images/ResearchIconMobile.png" alt="Research Icon">
+                  <h2>Research and Data Analysis</h2>
+                  <p>User Surveys</p>
+                  <p>User Personas</p>
+                  <p>Competative Analysis</p>
+               </div>
+               <div class="process-column">
+                  <img src="images/InfoArchIconMobile.png" alt="Info Architecture Icon">
+                  <h2>Info Architecture</h2>
+                  <p>User Stories</p>
+                  <p>User Flows</p>
+                  <p>Wireframes</p>
+               </div>
+               <div class="process-column">
+                  <img src="images/VisualIconMobile.png" alt="Visual Design Icon">
+                  <h2>Visual Design</h2>
+                  <p>Branding</p>
+                  <p>Style Guide</p>
+                  <p>Hi-Fi Mockups</p>
+               </div>
+               <div class="process-column">
+                  <img src="images/TestingIconMobile.png" alt="Testing Icon">
+                  <h2>Testing</h2>
+                  <p>Clickable Prototypes</p>
+                  <p>Usability Testing</p>
+                  <p>Preference Testing</p>
+               </div>
+            </div>
          </div>
       </section>
-      <section class="decoration2">
-         <div>
-            <img src="images/Smash.png" alt="SMASH Icon">
-         </div>
-      </section>
+      <!-- SMASH -->
+      <div>
+         <img class="Smash" src="images/Smash.png" alt="SMASH Icon">
+      </div>
       <!-- testimonial -->
       <section class="test">
          <h1 class="header">Testify</h1>
@@ -129,25 +115,25 @@
       <button class="btn back-to-top">Back to Top</button>
       <!-- footer -->
       <footer class="footer">
-         <div class="footerContent">
+         <div class="footer-content">
             <h1>Thank you for making it this far, but my story doesn’t end here.</h1>
             <div>
-                <button class="btn btn1">Contact Me</button>
+               <button class="btn btn1">Contact Me</button>
             </div>
             <p>Let's connect</p>
-            <div class="footerContactIcons">
+            <div class="footer-contact-icons">
                <a href="mailto:https:ashley.ross0612@gmail.com"><img src="images/EmailIcon.png" alt="Email Icon"></a>
                <a href="https://www.linkedin.com/in/ashley-ross-14021719a/"><img src="images/LinkedInIcon.png" alt="LinkedIn Icon"></a>
                <a href="https://github.com/Superiorsiren"><img src="images/GitHubIcon.png" alt="GitHub Icon"></a>
             </div>
-            <div class="footerContactLinks">
-              <ul>
-                <li><a href="project1.html">Work</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Download Resume</a></li>
-                <li><a href="mailto:https:ashley.ross0612@gmail.com">ashley.ross0612@gmail.com</a></li>
-                <li><img class="footerLogo" src="images/LogoWhite.png" alt="Ashley Ross Logo"></li>
-              </ul>
+            <div class="footer-contact-links">
+               <ul>
+                  <li><a href="project1.html">Work</a></li>
+                  <li><a href="#">About Me</a></li>
+                  <li><a href="https://docs.google.com/document/d/1v1ztrmMRtNAwA8RwyROW0vInc9FyLgYK71kHSUkGEFk/edit?usp=sharing">View Resume</a></li>
+                  <li><a href="mailto:https:ashley.ross0612@gmail.com">ashley.ross0612@gmail.com</a></li>
+                  <li><img class="footer-logo" src="images/LogoWhite.png" alt="Ashley Ross Logo"></li>
+               </ul>
             </div>
          </div>
       </footer>
