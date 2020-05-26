@@ -328,7 +328,6 @@ section {
   text-decoration: none;
 }
 
-
 .footer-logo {
   height: 6rem;
   width: 8rem;
@@ -902,7 +901,7 @@ section {
 .final-column1 {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 8rem;
@@ -910,17 +909,25 @@ section {
 }
 
 .final-column2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 350px;
   margin: 0 auto;
   padding: 0 4rem 4rem 4rem;
 }
 
 .final-column3 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 350px;
   margin: 0 auto;
+  min-width: 40rem;
   padding: 4rem 0;
 }
 
 .final-column3 img {
   height: 60rem;
+  width: 45rem;
   padding-left: 4rem;
 }
 
