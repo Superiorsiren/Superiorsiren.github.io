@@ -1267,4 +1267,13 @@ width: 80%;
     border-radius: .2rem;
     padding: 1rem 2rem;
   }
+
+  .menu li:hover {
+    background-color: transparent;
+  }
+
+  .nav li a:hover {
+    color: #CF2833;
+  }
+
 }
