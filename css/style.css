@@ -1287,7 +1287,6 @@ width: 80%;
 
 .bio-column3 img {
   height: auto;
-  margin-bottom: -8rem;
   max-width: 60rem;
   min-width: 20rem;
   width: 100%;
@@ -1297,8 +1296,7 @@ width: 80%;
 .bio-grid-building {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 8rem 0;
+  justify-content: right;
   width: 100%;
 }
 
@@ -1315,7 +1313,7 @@ width: 80%;
   background-color: white;
   border: .8rem solid #FAEAEB;
   border-radius: 4rem;
-  margin: 4rem 0;
+  margin-right: 4rem;
   padding: 4rem 4rem;
   z-index: 2;
 }
@@ -1330,13 +1328,12 @@ width: 80%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 8rem 0;
-  width: 100%;
+  justify-content: right;
+  width: 60%;
 }
 
 .bio-column6 {
-  margin: 4rem 8rem;
+  margin: 8rem 0 4rem 8rem;
   z-index: 2;
 }
 
