@@ -805,7 +805,7 @@ width: 80%;
   display: flex;
   flex-direction: column;
   flex: 1 0 50%;
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0 8rem 0;
 }
 
 .testingone-column4 img {
@@ -1239,7 +1239,7 @@ width: 80%;
   margin: 0 auto;
   width: 80%;
 }
-/*** Bio ***/
+/** Bio Body **/
 .sky-background {
   background-image: url(../images/SkyBackground.jpg);
   background-size: cover;
@@ -1251,16 +1251,17 @@ width: 80%;
 .bio-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  padding-left: 10%;
   width: 100%;
 }
+
 .bio h1 {
   color: #fff;
+  margin-left: 12%;
+  text-align: left;
 }
 
 .bio h2 {
-  padding-right: 10%;
+  margin-left: 12%;
 }
 
 .bio-column1 {
@@ -1287,6 +1288,7 @@ width: 80%;
 
 .bio-column3 img {
   height: auto;
+  margin-bottom: -13rem;
   max-width: 60rem;
   min-width: 20rem;
   width: 100%;
@@ -1295,8 +1297,8 @@ width: 80%;
 
 .bio-grid-building {
   display: flex;
-  flex-wrap: wrap;
   justify-content: right;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -1304,8 +1306,9 @@ width: 80%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  grid-gap: 10rem;
   justify-content: center;
-  width: 30%;
+  width: 40%;
 }
 
 .bio-column5 {
@@ -1315,7 +1318,6 @@ width: 80%;
   border-radius: 4rem;
   margin-right: 4rem;
   padding: 4rem 4rem;
-  z-index: 2;
 }
 
 .building-background {
@@ -1329,25 +1331,26 @@ width: 80%;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: right;
-  width: 60%;
+  width: 50%;
 }
 
 .bio-column6 {
-  margin: 8rem 0 4rem 8rem;
   z-index: 2;
 }
 
 .bio-column6 img {
   max-width: 30rem;
+  margin: 20rem 0 4rem 16rem;
 }
 
+/** Laptop and larger screens **/
 @media (min-width:48em) {
   .nav li {
     float: left;
   }
 
   .nav li a {
-    padding: 2rem 4rem;
+    padding: 2rem 3.8rem;
   }
 
   .nav .menu {
@@ -1363,7 +1366,7 @@ width: 80%;
   .nav ul a span {
     border: .1rem solid #fff;
     border-radius: .2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
   }
 
   .menu li:hover {
