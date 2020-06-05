@@ -42,7 +42,7 @@ h4 {
 /*** Body ***/
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.2;
 }
 
@@ -56,6 +56,7 @@ section {
 .header {
   padding-bottom: 8rem;
   text-align: center;
+  min-width: 80%;
 }
 
 /*** Buttons ***/
@@ -69,7 +70,7 @@ section {
   color: #fff;
   cursor: pointer;
   font-family: "raleway";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   overflow: hidden;
   padding: 2rem 4rem;
@@ -99,7 +100,7 @@ section {
   color: #fff;
   cursor: pointer;
   font-family: "raleway";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   opacity: 80%;
   padding: 1rem 1rem;
@@ -119,7 +120,7 @@ section {
 .nav {
   background-color: #000;
   font-family: "raleway";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -1295,8 +1296,11 @@ width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-right: 10%;
   width: 100%;
+}
+
+.bio-column2 p {
+  padding-right: 10%;
 }
 
 .bio-column2 {
@@ -1352,7 +1356,6 @@ width: 80%;
 .building-background {
   display: none;
 }
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
